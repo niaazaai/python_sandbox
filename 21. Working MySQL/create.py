@@ -4,8 +4,8 @@ import mysql.connector
 connection = mysql.connector.connect(
     host='localhost',
     user='root',
-    password='c6SUwPIkNV]joQtN',
-    database='python_practice'
+    password='',
+    database='python'
 )
 
 database = connection.cursor()
@@ -21,4 +21,4 @@ for x in database:
 
 
 # TO ALTER TABLE 
-database.execute('ALTER TABLE customers ADD COLUMN comment VARCHAR(255)')
+# database.execute('ALTER TABLE customers ADD COLUMN comment VARCHAR(255)')
