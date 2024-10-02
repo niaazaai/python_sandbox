@@ -1,4 +1,11 @@
-print('====|//////////////////////////////////////')
+
+# python variable naming rules 
+    # A variable name must start with a letter or the underscore character
+    # A variable name cannot start with a number
+    # A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
+    # Variable names are case-sensitive (age, Age and AGE are three different variables)
+    # A variable name cannot be any of the Python keywords.
+
 
 message = 'I told my friend, "Python is my favorite language!"'
 msg1 = "The language 'Python' is named after Monty Python, not the snake."
@@ -15,13 +22,10 @@ print(message)
 print(msg1)
 print(msg_two)
 
-name1 = "Maseeh"
-name2 = "Niazaai";
+name1 = "Khalid"
+name2 = "Walid";
 
 print(f"Full Name is :  {name1.upper()} {name2.lower()}")
-
-
-
 print("Languages:\n\tPython\n\tC\n\tJavaScript")
 
 

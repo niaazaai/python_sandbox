@@ -1,16 +1,14 @@
+
 bicycles = ['trek', 'cannondale', 'redline', 'specialized' , 'last_items']
 print(bicycles[1])
 print(bicycles[3])
 
 print(bicycles[-1])
 
-
 bicycles = ['trek', 'cannondale', 'redline', 'specialized']
 message = f"My first bicycle was a {bicycles[0].title()}."
 
 print(message)
-
-
 
 motorcycles = ['honda', 'yamaha', 'suzuki']
 print(motorcycles)
@@ -29,7 +27,6 @@ del motorcycles[0]
 print(motorcycles)
 
 
-
 motorcycles = [12, 13, 14 , 15 , 16]
 print(motorcycles)
 
@@ -41,7 +38,6 @@ print(popped_motorcycle)
 popped_motorcycle = motorcycles.pop(2)
 print(motorcycles)
 print(popped_motorcycle)
-
 
 
 motorcycles = ['honda', 'yamaha', 'suzuki', 'ducati']

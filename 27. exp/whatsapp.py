@@ -8,7 +8,7 @@ try:
    
   # sending message to receiver
   # using pywhatkit
-  pywhatkit.sendwhatmsg("+93799456344", "monjay",  7, 14 )
+  pywhatkit.sendwhatmsg("+93799456344", "monjay",  4, 24 )
   print("Successfully Sent!")
  
 except:

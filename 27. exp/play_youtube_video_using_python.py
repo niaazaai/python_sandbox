@@ -8,7 +8,8 @@ try:
    
   # it plays a random YouTube
   # video of GeeksforGeeks
-  pywhatkit.playonyt("Ekeeda")
+  # pywhatkit.playonyt("Insider") # Ekeeda
+  pywhatkit.playonyt("HelpBnk")
   print("Playing...")
  
 except:
