@@ -1,28 +1,34 @@
-# def describe_pet1(animal_type, pet_name):
-#     """Display information about a pet."""
-#     print(f"\nI have a {animal_type}.")
-#     print(f"My {animal_type}'s name is {pet_name.title()}.")
 
-# describe_pet1(animal_type='hamster', pet_name='harry')
+# A function is a block of code which only runs when it is called.
+# You can pass data, known as parameters, into a function.
+# A function can return data as a result.
+# example backery 
 
+def describe_pet(animal_type, pet_name):
+    """Display information about a pet."""
+    print(f"\nI have a {animal_type}.")
+    print(f"My {animal_type}'s name is {pet_name.title()}.")
 
-
-# # we have four things to remember 
-# """
-# def describe_pet(animal_type, pet_name) <- this is parameter
-# def describe_pet(animal_type='dog', pet_name) <- this is a default value for parameter if argument value is not provided we can call it like  describe_pet('jaik') 
-# describe_pet('dog', 'jaik') <- this is argument or the value of parameter that is passed to function is called arguments 
-# describe_pet(animal_type='hamster', pet_name='harry') <- this is called Keyword Arguments 
-# describe_pet( 'hamster', 'harry') <- this is called positional Arguments 
-
-# """
+describe_pet(animal_type='hamster', pet_name='harry')
 
 
 
-# def describe_pet(pet_name, animal_type='dog'):
-#     """Display information about a pet."""
-#     print(f"\nI have a {animal_type}.")
-#     print(f"My {animal_type}'s name is {pet_name.title()}.")
+# we have four things to remember 
+"""
+def describe_pet(animal_type, pet_name) <- this is parameter
+def describe_pet(animal_type='dog', pet_name) <- this is a default value for parameter if argument value is not provided we can call it like  describe_pet('jaik') 
+describe_pet('dog', 'jaik') <- this is argument or the value of parameter that is passed to function is called arguments 
+describe_pet(animal_type='hamster', pet_name='harry') <- this is called Keyword Arguments 
+describe_pet( 'hamster', 'harry') <- this is called positional Arguments 
+
+"""
+
+
+
+def describe_pet(pet_name, animal_type='dog'):
+    """Display information about a pet."""
+    print(f"\nI have a {animal_type}.")
+    print(f"My {animal_type}'s name is {pet_name.title()}.")
 
 
 # # A dog named Willie.
@@ -44,19 +50,19 @@
 
 
 
-# def get_formatted_name(first_name, last_name, middle_name=''):
-#     """Return a full name, neatly formatted."""
-#     if middle_name:
-#         full_name = f"{first_name} {middle_name} {last_name}"
-#     else:
-#         full_name = f"{first_name} {last_name}"
-#     return full_name.title()
+def get_formatted_name(first_name, last_name, middle_name=''):
+    """Return a full name, neatly formatted."""
+    if middle_name:
+        full_name = f"{first_name} {middle_name} {last_name}"
+    else:
+        full_name = f"{first_name} {last_name}"
+    return full_name.title()
 
-# musician = get_formatted_name('jimi', 'hendrix')
-# print(musician)
+musician = get_formatted_name('jimi', 'hendrix')
+print(musician)
 
-# musician = get_formatted_name('john', 'hooker', 'lee')
-# print(musician)
+musician = get_formatted_name('john', 'hooker', 'lee')
+print(musician)
 
 
 

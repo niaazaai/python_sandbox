@@ -1,53 +1,16 @@
 
-# alien = { 'color': 'green', 'points': 5, 'live' :3 }
-# for al in alien:
-#     print(al)
+# A dictionary is a collection which is ordered*, changeable and do not allow duplicates.
+students_ = { 'name': 'ahmad', 'score': 15, 'age' :13, 'phone':'79872834' }
+for st in students_:
+    print(st)
+ 
+print(students_['name'])
+print(students_)
 
+students_ = { 'name': 'ahmad', 'score': 15, 'age' :13, 'phone':'79872834' }
 
-# alien = {'color': 'green', 'points': 5, 'x_position': 0, 'y_position': 25}
-# alien['color'] = 'yellow'
-# print(alien['color'])
-# print(alien)
-
-# for al in alien:
-#     print(al)
-
-
-# alien_0 = {'x_position': 0, 'y_position': 25, 'speed': 'medium'}
-# print(f"Original position: {alien_0['x_position']}")
-#
-# # Move the alien to the right.
-# # Determine how far to move the alien based on its current speed.
-# if alien_0['speed'] == 'slow':
-#     x_increment = 1
-# elif alien_0['speed'] == 'medium':
-#     x_increment = 2
-# else:
-#     # This must be a fast alien.
-#     x_increment = 3
-#
-# # The new position is the old position plus the increment.
-# alien_0['x_position'] = alien_0['x_position'] + x_increment
-# print(f"New position: {alien_0['x_position']}")
-
-
-# alien = {'x_position': 0, 'y_position': 25, 'speed': 'medium'}
-# print(alien.get('speed1' , 'there is no element called speed1 in the alien dictionary'))
-# # print(alien['speed1'])
-
-
-
-# DICTIONARY FORM OFFICE :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-# cars = ['bmw' , 'flexo' , 'voxwagon' , 'ford' , 'ferrari']
-# for car  in cars:
-#     print(f"new cars : {car}") 
-
-
-# contract = {'id' : 22 , 'name' : 'glucose' , 'Price': 100}
-
-# for k , v in contract.items():
-#     print(f"{k} => {v}")
+for k , v in students_.items():
+    print(f"{k} => {v}")
 
 
 # # working with only keys 
@@ -101,93 +64,90 @@
 # we have dictionaries 
 # we have sets 
 
+students = {'ahmad' , 'mahmood' , 'khalid' , 'ahmad'}
+print(students)
 
+lists = ['ahmad' , 'mahmood' , 'khalid' , 'ahmad']
+print(lists)
 
+tuple_ = ('ahmad' , 'mahmood' , 'khalid' , 'ahmad')
+print(tuple_)
 
-# students = {'ahmad' , 'mahmood' , 'khalid' , 'ahmad'}
-# print(students)
-
-# lists = ['ahmad' , 'mahmood' , 'khalid' , 'ahmad']
-# print(lists)
-
-# tuple_ = ('ahmad' , 'mahmood' , 'khalid' , 'ahmad')
-# print(tuple_)
-
-# favorite_languages = { 'jen': 'python', 'sarah': 'c', 'edward': 'rust', 'phil': 'python'}
-# print(favorite_languages)
-# for key in sorted(favorite_languages.keys()) : 
-#     print(key)
-
-
-
-
-# Make an empty list for storing aliens.
-aliens = []
-
-# Make 30 green aliens.
-for alien_number in range(30):
-    new_alien = {'color': 'green', 'points': 5, 'speed': 'slow'}
-    aliens.append(new_alien)
-
-# Show the first 5 aliens.
-for alien in aliens[:4]:
-    print(alien)
-print("...")
-
-# Show how many aliens have been created.
-print(f"Total number of aliens: {len(aliens)}")
+favorite_languages = { 'jen': 'python', 'sarah': 'c', 'edward': 'rust', 'phil': 'python'}
+print(favorite_languages)
+for key in sorted(favorite_languages.keys()) : 
+    print(key)
 
 
 
 
-race = {
-    'name' : 'formulla' ,
-    'cars' : ['bmw' , 'flexo' , 'voxwagon' , 'ford' , 'ferrari'] , 
-}
+# # Make an empty list for storing aliens.
+# aliens = []
 
-print(race)
+# # Make 30 green aliens.
+# for alien_number in range(30):
+#     new_alien = {'color': 'green', 'points': 5, 'speed': 'slow'}
+#     aliens.append(new_alien)
 
+# # Show the first 5 aliens.
+# for alien in aliens[:4]:
+#     print(alien)
+# print("...")
 
-
-favorite_languages = {
-    'jen': ['python', 'rust'],
-    'sarah': ['c'],
-    'edward': ['rust', 'go'],
-    'phil': ['python', 'haskell'],
-}
-
-
-for key , value  in favorite_languages.items(): 
-    for v in value : 
-        print(f"{key}'s favorite language is {v}")
-
-# or more optimized way is 
-
-for key , value  in favorite_languages.items(): 
-        print(f"\t{key}'s favorite language is {value}")
+# # Show how many aliens have been created.
+# print(f"Total number of aliens: {len(aliens)}")
 
 
 
-# dictionary inside dictionary 
 
-users = {
-    'aeinstein': {
-        'first': 'albert',
-        'last': 'einstein',
-        'location': 'princeton',
-        },
+# race = {
+#     'name' : 'formulla' ,
+#     'cars' : ['bmw' , 'flexo' , 'voxwagon' , 'ford' , 'ferrari'] , 
+# }
 
-    'mcurie': {
-        'first': 'marie',
-        'last': 'curie',
-        'location': 'paris',
-        },
-}
+# print(race)
 
-for username , information in users.items(): 
-    print(f"Username : {username}")
-    print(f"\t Fullname {information['first']} {information['last']}")
-    print(f"\t Location {information['location']}")
+
+
+# favorite_languages = {
+#     'jen': ['python', 'rust'],
+#     'sarah': ['c'],
+#     'edward': ['rust', 'go'],
+#     'phil': ['python', 'haskell'],
+# }
+
+
+# for key , value  in favorite_languages.items(): 
+#     for v in value : 
+#         print(f"{key}'s favorite language is {v}")
+
+# # or more optimized way is 
+
+# for key , value  in favorite_languages.items(): 
+#         print(f"\t{key}'s favorite language is {value}")
+
+
+
+# # dictionary inside dictionary 
+
+# users = {
+#     'aeinstein': {
+#         'first': 'albert',
+#         'last': 'einstein',
+#         'location': 'princeton',
+#         },
+
+#     'mcurie': {
+#         'first': 'marie',
+#         'last': 'curie',
+#         'location': 'paris',
+#         },
+# }
+
+# for username , information in users.items(): 
+#     print(f"Username : {username}")
+#     print(f"\t Fullname {information['first']} {information['last']}")
+#     print(f"\t Location {information['location']}")
 
 
 
