@@ -9,8 +9,8 @@
     None Type:	NoneType
 
 """
-x = 5
-print(type(x))
+# x = 5.1
+# print(type(x))
 
 # note: explore more string datatypes 
 string_ = "Hello World"	 # has it is own functions '' - "" - len(string_)
