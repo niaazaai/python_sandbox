@@ -1,17 +1,14 @@
 
 # A dictionary is a collection which is ordered*, changeable and do not allow duplicates.
+ 
 students_ = { 'name': 'ahmad', 'score': 15, 'age' :13, 'phone':'79872834' }
 for st in students_:
-    print(st)
+    print(f"{st}:{students_[st]}")
  
-print(students_['name'])
-print(students_)
+# print(students_['name'])
+# print(students_)
 
-students_ = { 'name': 'ahmad', 'score': 15, 'age' :13, 'phone':'79872834' }
-
-for k , v in students_.items():
-    print(f"{k} => {v}")
-
+ 
 
 # # working with only keys 
 # for k in contract.keys():
@@ -64,19 +61,19 @@ for k , v in students_.items():
 # we have dictionaries 
 # we have sets 
 
-students = {'ahmad' , 'mahmood' , 'khalid' , 'ahmad'}
-print(students)
+# students = {'ahmad' , 'mahmood' , 'khalid' , 'ahmad'}
+# print(students)
 
-lists = ['ahmad' , 'mahmood' , 'khalid' , 'ahmad']
-print(lists)
+# lists = ['ahmad' , 'mahmood' , 'khalid' , 'ahmad']
+# print(lists)
 
-tuple_ = ('ahmad' , 'mahmood' , 'khalid' , 'ahmad')
-print(tuple_)
+# tuple_ = ('ahmad' , 'mahmood' , 'khalid' , 'ahmad')
+# print(tuple_)
 
-favorite_languages = { 'jen': 'python', 'sarah': 'c', 'edward': 'rust', 'phil': 'python'}
-print(favorite_languages)
-for key in sorted(favorite_languages.keys()) : 
-    print(key)
+# favorite_languages = { 'jen': 'python', 'sarah': 'c', 'edward': 'rust', 'phil': 'python'}
+# print(favorite_languages)
+# for key in sorted(favorite_languages.keys()) : 
+#     print(key)
 
 
 

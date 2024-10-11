@@ -21,12 +21,13 @@ print(df.loc[2])
 
 
 # Importing data from CSV:
-df = pd.read_csv('data.csv')
-print(df.head())
+# df = pd.read_csv('data.csv')
+# print(df.head())
 
-# Importing data from Excel:
-df = pd.read_excel('data.xlsx')
-print(df.head())
+# pip install openpyxl
+# # Importing data from Excel:
+# df = pd.read_excel('data.xlsx')
+# print(df.head())
 
 
 

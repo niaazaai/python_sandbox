@@ -7,11 +7,8 @@
     Boolean Type:	bool
     Binary Types:	bytes, bytearray, memoryview
     None Type:	NoneType
-
 """
-# x = 5.1
-# print(type(x))
-
+  
 # note: explore more string datatypes 
 string_ = "Hello World"	 # has it is own functions '' - "" - len(string_)
 string__ = '''
@@ -19,6 +16,7 @@ string__ = '''
     lorem ipsum dolor
     lorem ipsum dolor
 '''
+
 int_ = 20	
 float_ = 20.5		
 complex_ = 1j	
@@ -46,4 +44,9 @@ x = frozenset(("apple", "banana", "cherry"))
 x = bool(5)		
 x = bytes(5)		
 x = memoryview(bytes(5))
+
+
+x  = '10'
+
+print(int(x))
 

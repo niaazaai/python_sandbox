@@ -1,7 +1,7 @@
 import json
 import os
-
 class Library:
+    
     def __init__(self, filename='books.json'):
         self.filename = filename
         self.books = self.load_books()
@@ -23,7 +23,7 @@ class Library:
     
     def add_book(self, title, author):
         """Add a new book to the library."""
-        book_id = self.generate_id()
+        book_id = self.generate_id() 
         new_book = {
             'id': book_id,
             'title': title,
@@ -98,5 +98,3 @@ def main():
         else:
             print("Invalid choice. Please enter a number between 1 and 4.")
 
-if __name__ == "__main__":
-    main()

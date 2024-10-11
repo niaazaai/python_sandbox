@@ -37,26 +37,26 @@
         - Signed right shift (Shift right by pushing copies of the leftmost bit in from the left, and let the rightmost bits fall off) - >> 
 """
  
-print(3 + 3) 
-print(3 - 3)
+   
+
 
 #bitwise example
-decimal_number = 22
+# decimal_number = 22
 
-_22_in_16_bin = format(22, '016b')  
-_14_in_16_bin = format(14, '016b')  
+# _22_in_16_bin = format(22, '016b')  
+# _14_in_16_bin = format(14, '016b')  
 
-print(_22_in_16_bin)
-print(_14_in_16_bin)
+# print(_22_in_16_bin)
+# print(_14_in_16_bin)
 
-results = 22 & 14; 
-print(results) 
-print(format(results, '016b')) 
+# results = 22 & 14; 
+# print(results) 
+# print(format(results, '016b')) 
 
-print(3 << 2)
-print(3 & 2)
+print(3 >> 2)
+# print(format(3, '016b')) 
+# print(format(12, '016b')) 
 
-
-x =  ("apple", "banana", "cherry")	
-y =  ("apple", "banana", "cherry")	
-print(x is y)
+# x =  ("apple", "banana", "cherry")	
+# y =  ("apple", "banana", "cherry")	
+# print(x is y)

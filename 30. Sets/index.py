@@ -1,8 +1,14 @@
 
 #SETS - A set is a collection which is unordered, unchangeable*, and unindexed.
 
+ 
+ 
 set__ = {"apple", "banana", "cherry", "apple"}
+set2 = {'abc' , 'eft'}
 
+set__.update(set2)
+
+set__.remove('abc')
 #access items 
 for item in set__:
   print(item)
@@ -11,7 +17,7 @@ for item in set__:
 # however you can change it to list and manipulate it. 
 
 set__.add('grapes')
-print(set__)
+
 
 # add new set to old one
 new_set__ = {'mango' , 'watermilon'}
@@ -20,3 +26,5 @@ print(set__)
 
 # remove items 
 set__.remove('grapes')
+set__.remove('banana')
+print(set__)

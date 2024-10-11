@@ -1,14 +1,16 @@
-import Dog as animal 
+import Dog 
+
 from car import car  , tesla  
 # import carton as box 
-dog = animal.Dog('Willie' , 7)
+
 
 car =  car('TOYOTA' , 2021 , 'C-130' )
 tesla = tesla('TESLA' , 2022 , 'leaf')
 
-# print(dog.name)
-# print(dog.age)
-# dog.run()
+ 
+print(car)
+print(car.name)
+print(car.describe_car())
 # dog.roll_over()
 # car.describe_car()
 # car.set_odometer(22)
@@ -21,10 +23,10 @@ tesla = tesla('TESLA' , 2022 , 'leaf')
 # carton.increment_quantity(176)
 # carton.create_quotation()
 
-tesla.describe_car()
-tesla.name = 'Benz'
+# tesla.describe_car()
+# tesla.name = 'Benz'
 
-tesla.describe_car()
-tesla.describe_battery()
-tesla.fill_gas_tank()
+# tesla.describe_car()
+# tesla.describe_battery()
+# tesla.fill_gas_tank()
 
