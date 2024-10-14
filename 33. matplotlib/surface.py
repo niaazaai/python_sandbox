@@ -1,30 +1,44 @@
+# sub-plots and saving 
+
+import matplotlib.pyplot as plt
 import numpy as np
-import matplotlib.pyplot as pt
 
+# Generate x values
+x = np.linspace(-2 * np.pi, 2 * np.pi, 1000)
 
-# Create a grid of x and y values
-x = np.linspace(-5, 5, 100)
-y = np.linspace(-5, 5, 100)
-x, y = np.meshgrid(x, y)
+# Calculate y values for each function
+y_cos = np.cos(x)  # Cosine wave
+y_sin = np.sin(x)  # Sine wave
+y_tan = np.tan(x)  # Tangent wave
 
-# Calculate z values based on the mathematical formula
-z = np.sin(np.sqrt(x**2 + y**2))
+# Create a figure with 3 subplots
+fig, axs = plt.subplots(2, 1, figsize=(10, 12))
 
-# Create a 3D plot
-fig = pt.figure(figsize=(10, 8))
-ax = fig.add_subplot(111, projection='3d')
+# Cosine Wave
+axs[0].plot(x, y_cos, color='blue', label='Cosine Wave')
+axs[0].set_title('Cosine Wave')
+axs[0].set_ylabel('cos(x)')
+axs[0].set_ylim(-1.5, 1.5)  # Limit y-axis for better visibility
+axs[0].grid(True)
+axs[0].legend()
 
-# Plot the surface
-surface = ax.plot_surface(x, y, z, cmap='viridis', edgecolor='none')
+# Sine Wave
+axs[1].plot(x, y_sin, color='orange', label='Sine Wave')
+axs[1].set_title('Sine Wave')
+axs[1].set_ylabel('sin(x)')
+axs[1].set_ylim(-1.5, 1.5)  # Limit y-axis for better visibility
+axs[1].grid(True)
+axs[1].legend()
 
-# Add a color bar which maps values to colors
-fig.colorbar(surface, shrink=0.5, aspect=10)
+# Tangent Wave
+# axs[2].plot(x, y_tan, color='green', label='Tangent Wave')
+# axs[2].set_title('Tangent Wave')
+# axs[2].set_ylabel('tan(x)')
+# axs[2].set_ylim(-10, 10)  # Limit y-axis for better visibility
+# axs[2].grid(True)
+# axs[2].legend()
 
-# Set titles and labels
-ax.set_title('3D Plot of z = sin(sqrt(x^2 + y^2))')
-ax.set_xlabel('X axis')
-ax.set_ylabel('Y axis')
-ax.set_zlabel('Z axis')
-
-# Show the plot
-pt.show()
+# Adjust layout to prevent overlap
+plt.tight_layout()
+# plt.savefig('subplots.jpeg', dpi=300, transparent = True )
+plt.show()
